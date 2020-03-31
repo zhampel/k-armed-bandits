@@ -16,8 +16,8 @@ class Bandit():
     """
     def __init__(self, samp_func=None, samp_params=[]):
         super(Bandit, self).__init__()
-        self.samp_params = samp_func.get_params#samp_params
-        self.samp_func = samp_func#(samp_params)
+        self.samp_params = samp_func.get_params()
+        self.samp_func = samp_func
         self.num_chosen = 0
         self.cum_reward = 0.
         self.step_reward = []
