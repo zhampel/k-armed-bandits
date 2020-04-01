@@ -14,7 +14,7 @@ class Bandit():
     Class for representing the 
     details of a single Bandit.
     """
-    def __init__(self, samp_func=None, samp_params=[]):
+    def __init__(self, samp_func=None):
         super(Bandit, self).__init__()
         self.samp_params = samp_func.get_params()
         self.samp_func = samp_func
