@@ -136,7 +136,7 @@ def get_distribution(distribution_name='gauss', params=[0, 1]):
          SciPy PDF
     """
     if distribution_name in DISTRIBUTION_FN_DICT:
-        fn = DISTRIBUTION_FN_DICT[distribution_name](params=params)
+        fn = DISTRIBUTION_FN_DICT[distribution_name](params=params, verbose=False)
         return fn
     else:
         raise ValueError('Invalid PDF name, {}, entered. Must be '
